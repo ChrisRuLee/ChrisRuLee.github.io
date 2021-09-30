@@ -1,0 +1,114 @@
+<!DOCTYPe html>
+<html lang="en">
+
+    <head>
+        <title>Ristorante de Caprio - Reservations & Contact</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+        <link href = "style.css" type = "text/css" rel = "stylesheet"/>
+        <link rel="shortcut icon" type="image/jpg" href="Images/favicon.ico"/>
+    </head>
+
+<body>
+
+    <script>
+
+        function myfunctionPopUp(){
+            alert("Your reservation has been booked.");
+        }
+    </script>
+
+    <div class="overskrift">
+    <header>
+        <h1><em>Ristorante de Caprio</em></h1>
+    </header>
+
+    <nav class="navig">
+        <a href="index.html">Home</a>
+        <a href="MenyWine.html">Menu & Wine</a>
+        <a href="Reservations.html">Reservations & Contact</a>
+        <a href="OurChefs.html">Our Chefs</a>
+    </nav>
+    </div>
+
+    <main>
+          <h2 class="top">Reservations</h2>
+        <div id="checkbox">
+            <input type="checkbox" id="meal1" name="lunch" value="course">
+            <label>Lunch(14:00 - 16:00)</label><br>
+            <input type="checkbox" id="meal2" name="dinner" value="course">
+            <label>Dinner(16:00 - 23:00)</label><br />
+        </div>
+        
+        <br />
+        <div>
+            <form>
+              <label>First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your first name">
+              
+              <label>Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name">
+          
+              <label for="Time">Time</label>
+              <select id="Time" name="Time">
+                <option value="14:00">14:00</option>
+                <option value="15:00">15:00</option>
+                <option value="16:00">16:00</option>
+                <option value="17:00">17:00</option>
+                <option value="18:00">18:00</option>
+                <option value="19:00">19:00</option>
+                <option value="20:00">20:00</option>
+                <option value="21:00">21:00</option>
+                <option value="22:00">22:00</option>
+                <option value="23:00">23:00</option>
+              </select>
+            
+              <input type="submit" value="Submit" onclick="myfunctionPopUp()">
+            </form>
+          </div>
+        
+      <hr>
+
+      <h2 id="contact_us">Contact us</h2>
+        <ul class="contact">
+            <li>Telephone: 555-603-999</li>
+            <li><a href="mailto:decapri@campari.com">E-Mail: decapri@campari.com</a></li>
+            <li><a id="maps" href="https://www.google.com/maps/place/1053+Madison+Ave,+New+York,+NY+10028,+USA/@40.7771176,-73.9615341,19.45z/data=!4m8!1m2!2m1!1s1053+Madison+Avenue,+New+York,+NY+100055!3m4!1s0x89c2589671e6c0f1:0x494f182a0f9d8e48!8m2!3d40.777069!4d-73.9612611" target="_blank">Mail: 1053 Maddison Avenue, New York, NY 100055</a></li>
+        </ul>
+            <br>
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d755.3284195805988!2d-73.9615341!3d40.7771176!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2589671e6c0f1%3A0x494f182a0f9d8e48!2s1053%20Madison%20Ave%2C%20New%20York%2C%20NY%2010028%2C%20USA!5e0!3m2!1sno!2sno!4v1632996428043!5m2!1sno!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    </main>
+<hr>
+<footer> <!-- Legge til bilde, adresse og contact, tre div -->
+            
+
+    <div id="footerBox1">
+            <h5>Opening hours</h5>
+    
+        <blockquote>Monday:     14:00 - 23:00</blockquote>
+        <blockquote>Tuesday:    14:00 - 23:00</blockquote>
+        <blockquote>Wednesday:  14:00 - 23:00</blockquote>
+        <blockquote>Thursday:   Closed</blockquote>
+        <blockquote>Friday:     14:00 - 23:00</blockquote>
+        <blockquote>Saturday:   12:00 - 23:00</blockquote>
+        <blockquote>Sunday:     Closed</blockquote>
+        <br />
+    </div>
+
+    <div id="footerBox2">
+        <h5>Contact us</h5>
+        <blockquote>Telephone: 555-603-999</blockquote>
+        <blockquote><a href="mailto:decapri@campari.com">e-mail: decaprio@campari.com</a></blockquote>
+    </div>
+
+    <div id="footerBox3">
+        <h5 id="shortcut">Shortcuts</h5>
+        <blockquote><a href="#top">Top</a></blockquote>
+        <blockquote><a href="MenyWine.html">Menu</a></blockquote>
+        <blockquote><a href="index.html">Home</a></blockquote>
+        <blockquote><a href="Reservations.html">Reservations & Contact us</a></blockquote>
+        <blockquote><a href="OurChefs.html">Our Chefs</a></blockquote>
+    </div>
+    </footer>
+</body>
